@@ -24,7 +24,7 @@ export const AuthProvider = ({ children }) => {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
       });
-      setCurrentUser(response.data.userType); // Assuming response.data.userType is 'admin' or 'user'
+      setCurrentUser(response.data.userType); 
       setLoggedIn(true);
     } catch (error) {
       console.error('Error verifying token:', error);
