@@ -9,13 +9,13 @@ const HomePage = () => {
     const navigate = useNavigate();
     const { currentUser, loggedIn, loading } = useAuth();
 
-    useEffect(() => {
+   useEffect(() => {
         if (!loading) {
-            if (!loggedIn) {
+            if (!loggedIn || !currentUser) {
                 navigate('/login');
             }
         }
-    }, [loggedIn, loading, navigate]);
+    }, [loggedIn, loading, currentUser, navigate]);
 
     if (loading) {
         return <LoadingSpinner />;
