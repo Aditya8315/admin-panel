@@ -9,15 +9,10 @@ Before you begin, ensure you have met the following requirements:
 ## Installation
 
 1. **Clone the repository:**
-
-   
-   ```bash
    git clone https://github.com/Aditya8315/admin-panel.git
    cd admin-panel
   
 #Set up the client environment:
-
-   ```bash
    cd client
    npm install
 
@@ -26,12 +21,11 @@ set the VITE_BACKEND_BASE_URL
 
 Run the client development server:
 
-   ```bash
    npm run dev
+   
 #The client server will start at http://localhost:3000.
 
 #Set up the server environment:
-   ```bash
    cd ../server
    npm install
 
@@ -39,9 +33,9 @@ Run the client development server:
 #PORT
 #JWT_SECRET
 #MONGO_URI , create a Mongodb cluster on mongodb atlas and copy the connection string to this variable.
-Run the server:
-   ```bash
+#Run the server:
    npm run dev
+   
 The server will start running at http://localhost:5000.
 
 Usage
